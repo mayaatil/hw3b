@@ -11,4 +11,4 @@ The Password Generator is a tool to have a password generated just for you! It t
 ## Links to Application
 
 - Here is the repo : [mayaatil/repo](https://github.com/mayaatil/hw3)
-- Here is the pages : [mayaatil/pages](https://mayaatil.github.io/index.html/)
+- Here is the pages : [mayaatil/pages](https://mayaatil.github.io/hw3/)
