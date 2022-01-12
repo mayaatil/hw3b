@@ -6,7 +6,7 @@ The Password Generator is a tool to have a password generated just for you! It t
 
 ## Screenshot
 
-![The Password Generator includes a user button to initiate the generator where a randomized password will appear one each time. A window screen is available so that the user can see the password that was created for him or her.](./assets/images/03-javascript-homework-demo.png)
+![The Password Generator includes a user button to initiate the generator where a randomized password will appear one each time. A window screen is available so that the user can see the password that was created for him or her.](./assets/images/password-gen.png)
 
 ## Links to Application
 
