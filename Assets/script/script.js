@@ -97,11 +97,16 @@ function generatePassword() {
     if (includeNumbers === true) {
       bigBoipassword = bigBoipassword.concat(numbers);
     }
-    console.log(bigBoipassword);
+    console.log(password);
   }
-  for (let i = 0; i < passwordLength.length; i++) {
-    return bigBoipassword[Math.floor(Math.random() * bigBoipassword.length)];
+
+  let finalPassword = [];
+  for (let i = 0; i < passwordLength; i++) {
+    finalPassword.push(
+      bigBoipassword[Math.floor(Math.random() * bigBoipassword.length)]
+    );
   }
+  return finalPassword.join("");
 }
 
 // Write password to the #password input
