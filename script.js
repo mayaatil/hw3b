@@ -63,7 +63,7 @@ let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 //Check for Password Length//
 function generatePassword() {
-  let bigBoipassword = "";
+  let bigBoipassword = [];
   let passwordLength = window.prompt(
     "Please enter your desired password length. Note: The length must be at least 8 characters and no more than 128 characters."
   );
@@ -81,7 +81,7 @@ function generatePassword() {
     );
     let includeNumbers = confirm("Do you want numbers in your password?");
 
-    //Loop through array which adds user choice to overall password//
+    //Password Array//
     if (includeSpecial === true) {
       bigBoipassword = bigBoipassword.concat(sc);
     }
@@ -97,15 +97,18 @@ function generatePassword() {
     if (includeNumbers === true) {
       bigBoipassword = bigBoipassword.concat(numbers);
     }
-    console.log(password);
+    console.log(bigBoipassword);
   }
 
+  //Loop//
   let finalPassword = [];
   for (let i = 0; i < passwordLength; i++) {
+    console.log(bigBoipassword[i]);
     finalPassword.push(
       bigBoipassword[Math.floor(Math.random() * bigBoipassword.length)]
     );
   }
+  //Return to a string//
   return finalPassword.join("");
 }
 
